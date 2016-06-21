@@ -118,3 +118,20 @@ app.get('/users/:id/addresses' function(req, res) {
 ```
 
 Note: This endpoint also pulls the User ID from the URI (which is stored in the req.params object).
+
+### Update
+
+Stub for Update documentation
+
+
+### Create
+
+Stub for Create Documentation
+
+### Delete
+
+Stub for Delete Documentation
+
+## Complex models
+
+Stub for detailing more complex models structures including joins, and altering field names etc... 
