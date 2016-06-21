@@ -5,14 +5,6 @@ class DB {
 
 	// Perform a select statement onto the database
 	get(search) {
-		/* USAGE: This function expects an object as an argument, where this object defines the query to be performed:
-
-			Properties:
-				returnValues: The Field Name to be returned e.g. 'ID'. Multiple values can be returned by using an array e.g. ['ID', FirstName', 'LastName'].
-				filters: The field to filter the result by e.g. ID = (someValue). Expects an object with the field and value e.g {ID: 4126}.
-				        Multiple values can be returned by using adding more properties to the object e.g. {ID: 4126, FirstName: 'Doris'}.
-		*/
-
 		var self = this;
 
 		if (search === undefined) { search = {} }
@@ -521,6 +513,7 @@ class DB {
 		}
 	}
 
+	// Function that adds OrderBy & GroupBy functionality
 	_manipulators(search) {
 		var self = this;
 		var manipulator = '';
