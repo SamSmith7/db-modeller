@@ -1,6 +1,10 @@
 # db-modeller
 This module creates a way to model MS SQL tables within a Node.JS environment. These models can then be used to quickly and flexibly query the underlying database with a simple Mongoose-style API which can be used throughout the rest of the code. Currently only the CRUD operations are supported, but there are plans to expand this to the full range of SQL functions available. All queries that are run on a particular model are run as a single transaction, properly type checked and all user input is parameterised to prevent sql injection attacks. The module is built ontop of the node-mssql package for actual communication with the underlying database. 
 
+
+##### NOTE: This Readme is still WIP as are example usage cases!! The module does a lot more than is currently documented
+
+
 ## Creating Simple Models
 For example models, see the examples/models folder. Models are effectively just literal Javascript objects which define the fields, primary key and any joins/linked-tables that are required. For example a simple single table model would look like the one below. 
 
